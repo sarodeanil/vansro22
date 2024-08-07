@@ -4,16 +4,6 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <properties>
-<sonar.host.url>
-  http://43.205.143.61:9000
-</sonar.host.url>
-<sonar.login>
-25f253601ac5122b3318aeffff7ca29c6b028b0b
-</sonar.login>
-  </properties>
-
-  
 
   <groupId>com.vansro.payments</groupId>
   <artifactId>vansro</artifactId>
