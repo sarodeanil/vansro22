@@ -17,7 +17,7 @@ environment{
             }
         }
 
-        stage('CODE QUALITY') {
+        stage('sonarqube-server') {
             steps {
               sh "mvn sonar:sonar"
             }
