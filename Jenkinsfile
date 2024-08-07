@@ -16,5 +16,12 @@ environment{
               sh "mvn clean package"
             }
         }
+
+        stage('CODE QUALITY') {
+            steps {
+              sh "mvn sonar:sonar"
+            }
+        }
+
     }
 }
