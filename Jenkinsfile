@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        PATH="$(PATH):/opt/maven/bin
+    }
     stages {
         stage('clone') {
             steps {
@@ -8,8 +11,9 @@ pipeline {
         }
         stage('buid') {
             steps {
-              echo "build by maven"
+              sh "mvn clean pacage"
             }
         }
+        
     }
 }
