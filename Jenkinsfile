@@ -18,8 +18,7 @@ pipeline {
          stage('deploy') {
             steps {
             sshagent(['tomcatlogin']) {
-    sh "scp -o StrictHostKeyChecking=no
-                target/vansro-1.0-SNAPSHOT.jar ec2-user@13.126.137.11:/opt/tomcat9/webapps"
+    sh "scp -o StrictHostKeyChecking=no target/vansro-1.0-SNAPSHOT.jar ec2-user@13.126.137.11:/opt/tomcat9/webapps"
 }
             }
         }
